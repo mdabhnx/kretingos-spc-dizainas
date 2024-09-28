@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #d4f0d4;
+  --font-family: "DM Sans", system-ui;
+  --font-size: 16px;
+  --line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner {
+  background-color: var(--bg-primary);
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-contents {
+  width: 100%;
+  max-width: 1230px;
+  display: flex;
+  gap: 25.5px;
+}
+
+.banner-contents > div {
+  font-weight: 300;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-contents {
+  width: 100%;
+  max-width: 1230px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 16px 0px 21px 0px;
+}
+
+.logo a {
+  display: block;
+  background: url("../assets/spc-icon.svg") center center no-repeat #fff;
+  height: 93px;
+  width: 97px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 33px;
+}
+
+.top-navigation {
+  display: flex;
+  gap: 18px;
+  justify-content: end;
+}
+
+.top-navigation-elements {
+  display: flex;
+  gap: 28px;
+}
+
+.social-elements {
+  display: flex;
+  gap: 8.3px;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 41.25px;
+}
+
+.main-navigation > div > a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3c3c3c;
+}
