@@ -214,3 +214,53 @@ body {
   flex-direction: column;
   gap: 5px;
 }
+
+.information {
+  background-color: var(--bg-primary);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.information-container {
+  width: 100%;
+  max-width: 1230px;
+  padding-top: 151px;
+}
+
+.information-container .title {
+  font-family: Outfit;
+  font-size: 45px;
+  font-weight: 250;
+  line-height: 62px;
+  color: #141515;
+}
+
+.information-container .desc {
+  margin-top: 21px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #141515;
+}
+
+.information-container .action {
+  margin-top: 28px;
+  margin-bottom: 54px;
+  width: 178px;
+  height: 55px;
+  outline: none;
+  border-radius: 60px;
+  background: #3468c0;
+  border: 0;
+}
+
+.action-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.23px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
