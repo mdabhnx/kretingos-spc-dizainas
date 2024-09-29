@@ -495,3 +495,307 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Existing styles remain unchanged */
+
+/* New responsive styles */
+.main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.banner-contents,
+.header-contents,
+.information-container,
+.news-content,
+.about-us-content,
+.footer-colls .content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.swapper-container-bg img,
+.map-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swapper-container-bg img {
+  clip-path: none;
+}
+
+.swapper-container {
+  position: relative;
+  /* margin-bottom: 120px; */
+}
+
+.card-container {
+  position: relative;
+  bottom: -60px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: calc(33.33% - 20px);
+  max-width: 178px;
+  min-width: 150px;
+}
+
+.info-card {
+  position: static;
+  width: 100%;
+  max-width: 315px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .about-us-content-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-contents {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .banner {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .main-navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-colls .content .infos {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .top-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-elements {
+    margin-top: 10px;
+  }
+
+  .news-content-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .news-content-navigation .redirect {
+    margin-top: 10px;
+  }
+
+  .swapper-container {
+    margin-bottom: 180px; /* Increase space for stacked cards */
+  }
+
+  .card-container {
+    bottom: -120px;
+  }
+
+  .box {
+    width: calc(50% - 20px);
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .box {
+    width: 100%;
+    max-width: 178px;
+  }
+
+  .information-container .title,
+  .news-content-navigation .title,
+  .about-us-content-info-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .swapper-container {
+    margin-bottom: 240px;
+  }
+
+  .card-container {
+    bottom: -180px;
+  }
+}
+
+.swapper-container {
+  position: relative;
+  width: 100%;
+  /* margin-bottom: 100px; */
+}
+
+.swapper-container-bg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  clip-path: none;
+}
+
+.card-container {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: calc(16.66% - 20px);
+  min-width: 150px;
+  max-width: 178px;
+  background-color: white;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 0px 4px 20px 0px #da6f001a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box .img {
+  margin-bottom: 10px;
+}
+
+.box .text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+/* Info Card Styles */
+.info-card {
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  width: 315px;
+  background-color: #ffffff;
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 0px 4px 20px 0px #da6f0033;
+  padding: 24px 32px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .box {
+    width: calc(20% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+    width: calc(25% - 20px);
+  }
+
+  .info-card {
+    bottom: 20%;
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swapper-container {
+    margin-bottom: 300px;
+  }
+
+  .card-container {
+    position: relative;
+    bottom: -50px;
+  }
+
+  .box {
+    width: calc(33.33% - 20px);
+  }
+
+  .info-card {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    max-width: 315px;
+    margin: 20px auto 0;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swapper-container {
+    margin-bottom: 400px; /* Further increase for more stacked boxes */
+  }
+
+  .box {
+    width: calc(50% - 20px); /* 2 boxes per row */
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    width: 100%; /* 1 box per row */
+    max-width: none;
+  }
+}
